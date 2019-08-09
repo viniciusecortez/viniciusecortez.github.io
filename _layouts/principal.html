@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    {% import navbar.html %}
-    {{ content }}
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3">
+                {% include navbar.html %}
+            </div>
+            <div class="column">
+            {{ content }}
+            </div>
+        </div>
+    </div>
     <script src="/assets/js/all_is_here.js"></script>
 </body>
 </html>
